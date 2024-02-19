@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-site des étudiants</title>
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mini-site des étudiants</a>
+    </nav>
+</header>
+
+
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="ss.jpg" class="card-img-top" alt="Photo de l'étudiant">
+
+                <div class="container mt-5">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#experience" data-toggle="tab">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education" data-toggle="tab">Éducation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competences" data-toggle="tab">Compétences</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Cécile Valentin</h5>
+                    <p class="card-text"></p>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="experience">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Expériences Professionnelles</h6>
+                                <ul>
+                                    <li>Expérience 1</li>
+                                    <li>Expérience 2</li>
+                                    <!-- Ajoutez d'autres expériences professionnelles ici -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="education">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Éducation</h6>
+                                <ul>
+                                    <li>Baccalauréat S</li>
+                                    <li>Licence en Droit</li>
+                                    <li>Master en Droit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="competences">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2 text-muted">Compétences</h6>
+                                <ul>
+                                    <li>Droit Social et Droit Juridique</li>
+                                    <li>Avocat</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalLettre1">
+                        Voir lettre de motivation
+                    </button>
+                    <button type="button" class="btn btn-secondary ml-2" data-toggle="modal" data-target="#modalCV1">
+                        Voir CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="modal fade" id="modalLettre1" tabindex="-1" role="dialog" aria-labelledby="modalLettre1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLettre1Label">Lettre de motivation de l'étudiant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Contenu de la lettre de motivation.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalCV1" tabindex="-1" role="dialog" aria-labelledby="modalCV1Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCV1Label">CV de l'étudiant</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="cv.jpg" class="img-fluid" alt="CV de l'étudiant">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
